@@ -1,0 +1,22 @@
+* {
+}
+
+body {
+  background-image: url("stardust.png");
+}
+
+.flex-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+p {
+  font-family:"Poiret One", cursive;
+  font-size: 35px;
+  color: white;
+  padding: 10px 0px 20px 0px;
+}
