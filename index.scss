@@ -1,0 +1,113 @@
+$lightestpink: #FFC3E6;
+$mediumpink: #FFBCE3;
+$pink: #FF78C7;
+$coral: #FFBCBE;
+$lightcoral: #FFC3C5;
+$darkcoral: #FF787C;
+$lightg: #C6FFC3;
+$green: #BFFFBC;
+$dgreen: #7FFF78;
+$lighty: #ECFFC3;
+$yell: #E9FFBC;
+$dy:#D4FF78;
+$grey: #4B4548;
+$dgrey: #40393D;
+$ddgrey: #262124;
+$mont: 'Montserrat', sans-serif;
+$lato: 'Lato', sans-serif;
+
+* {
+   margin: auto;
+ }
+
+#nav {
+  width: 100%;
+  height: 90px;
+  background-color: $grey;
+  font-family: $mont;
+  font-size: 13px;
+  color: $ddgrey;
+}
+
+#nav h1 {
+  float: left;
+  padding: 25px 20px 25px 20px;
+}
+
+#nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+#nav li a {
+  color: $ddgrey;
+  font-size: 20px;
+  padding: 30px 20px 30px 20px;
+  float: right;
+  text-decoration: none;
+}
+
+.cover {
+  width: 100%;
+  height: 500px;
+  background-color: $mediumpink;
+}
+.cover h1 {
+  text-align: center;
+  padding: 125px 0px 125px 0px;
+  color: $pink;
+  font-family: $mont;
+  font-size: 40px;
+}
+
+.cover p {
+  text-align: center;
+  color: $pink;
+  font-family: $mont;
+  font-size: 30px;
+}
+
+.bio {
+  width: 100%;
+  height: 900px;
+  background-color: $lightcoral;
+}
+
+.work {
+  width: 100%;
+  height: 900px;
+  background-color: $green;
+}
+
+.connect {
+  width: 100%;
+  height: 900px;
+  background-color: $yell;
+}
+
+#footer {
+  width: 100%;
+  height: 90px;
+  background-color: $grey;font-family: $mont;
+  font-size: 11px;
+  color: $ddgrey;
+}
+
+#footer ul {
+  list-style: none;
+  text-align: center;
+}
+
+#footer li a {
+  color: $ddgrey;
+  font-size: 11px;
+  padding: 30px 20px 30px 20px;
+  float: left;
+  text-decoration: none;
+}
+
+#footer p {
+  text-align: center;
+  float: right;
+  padding: 30px 20px 30px 20px;
+}
