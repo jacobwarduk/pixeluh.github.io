@@ -44,18 +44,117 @@
 
 .bio {
   width: 100%;
-  height: 900px;
+  height: 700px;
   background-color: #FFC3C5; }
+
+.bio h1 {
+  color: #FF787C;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  text-align: left;
+  padding: 60px 0px 30px 130px; }
+
+.bio p {
+  color: #FF787C;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  display: block;
+  text-align: left;
+  padding-left: 130px;
+  margin: 0 0 10px;
+  margin-bottom: 20px; }
+
+.bio img {
+  vertical-align: middle; }
+
+.bio-pic1 {
+  border-radius: 50%;
+  margin-top: -50;
+  margin-right: 100px;
+  display: block;
+  position: absolute;
+  top: 650px;
+  right: 5px; }
 
 .work {
   width: 100%;
   height: 900px;
-  background-color: #BFFFBC; }
+  background-color: #BFFFBC;
+  text-align: center;
+  padding-top: 90px; }
+
+.work h1 {
+  color: #0ad600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  margin-bottom: 50px; }
+
+.rigs ul {
+  list-style: none;
+  font-size: 0px;
+  margin-left: -2.0%; }
+
+.rigs li {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 0 30px 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  vertical-align: top;
+  box-shadow: 0 0 5px #ddd;
+  box-sizing: border-box; }
+
+.columns-2 li {
+  width: 47.5%; }
+
+.rigs li img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 10px; }
+
+.rig li h3 {
+  margin: 0 0 5px; }
+
+.rip li p {
+  font-size: .9em;
+  line-height: 1.5em;
+  color: #999; }
 
 .connect {
   width: 100%;
-  height: 900px;
+  height: 500px;
   background-color: #E9FFBC; }
+
+.connect h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #639200;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 90px; }
+
+.connect p {
+  font-family: "Montserrat", sans-serif;
+  color: #639200;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 80px; }
+
+.connect ul {
+  list-style: none;
+  text-align: center;
+  padding-top: 80px; }
+
+.connect li {
+  margin: 10px 15px 20px 15px;
+  display: inline-block; }
+
+.connect li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: #639200;
+  text-decoration: none; }
 
 #footer {
   width: 100%;
