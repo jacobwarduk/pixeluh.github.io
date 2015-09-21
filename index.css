@@ -124,8 +124,10 @@
   height: auto;
   margin: 0 0 10px; }
 
-.rig li h3 {
-  margin: 0 0 5px; }
+.rig li h2 {
+  margin: 0 0 5px;
+  color: #0ad600;
+  font-family: "Montserrat", sans-serif;}
 
 .rip li p {
   font-size: .9em;
