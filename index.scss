@@ -1,254 +1,39 @@
-$lightestpink: #FFC3E6;
-$mediumpink: #FFBCE3;
-$pink: #FF78C7;
-$coral: #FFBCBE;
-$lightcoral: #FFC3C5;
-$darkcoral: #FF787C;
-$lightg: #C6FFC3;
-$green: #BFFFBC;
-$dgreen: #7FFF78;
-$lighty: #ECFFC3;
-$yell: #E9FFBC;
-$dy:#D4FF78;
-$grey: #4B4548;
-$dgrey: #40393D;
-$ddgrey: #262124;
-$mont: 'Montserrat', sans-serif;
-$lato: 'Lato', sans-serif;
+/*
+Error: The line was indented 2 levels deeper than the previous line.
+        on line 59 of index.css
 
-// To do ! Nav button hover effects, jquery scroll, media buttons , placeholders
+54: 
+55: nav a:active {
+56: }
+57: 
+58: nav li:hover{
+59:     background-color: #ec6868;
+60:     border-bottom: 4px solid #e95252;
+61:     color: #e95252;
+62: }
+63: 
+64: .section-1 {
 
-* {
-   margin: auto;
- }
-
-#nav {
-  width: 100%;
-  height: 90px;
-  background-color: $grey;
-  font-family: $mont;
-  font-size: 13px;
-  color: $ddgrey;
-}
-
-#nav h1 {
-  float: left;
-  padding: 25px 20px 25px 20px;
-}
-
-#nav ul {
-  list-style: none;
-  text-align: center;
-}
-
-#nav li a {
-  color: $ddgrey;
-  font-size: 20px;
-  padding: 30px 20px 30px 20px;
-  float: right;
-  text-decoration: none;
-}
-
-#button:hover {
-  background: lighten($grey, 45)
-}
-
-.cover {
-  width: 100%;
-  height: 500px;
-  background-color: $mediumpink;
-}
-.cover h1 {
-  text-align: center;
-  padding: 125px 0px 125px 0px;
-  color: $pink;
-  font-family: $mont;
-  font-size: 40px;
-}
-
-.cover p {
-  text-align: center;
-  color: $pink;
-  font-family: $mont;
-  font-size: 30px;
-}
-
-.cover #p1 {
-  font-size: 15px;
-  margin-top: 15px;
-}
-
-.bio {
-  width: 100%;
-  height: 700px;
-  background-color: $lightcoral;
-}
-
-.bio h1 {
-  color: $darkcoral;
-  font-family: $mont;
-  font-size: 40px;
-  text-align: left;
-  padding: 60px 0px 30px 130px;
-}
-
-.bio p {
-  color: $darkcoral;
-  font-family: $mont;
-  font-size: 20px;
-  display: block;
-  text-align: left;
-  padding-left: 130px;
-  margin: 0 0 10px;
-  margin-bottom: 20px;
-  line-height: 100px;
-}
-
-.bio img {
-  vertical-align: middle;
-}
-
-.bio-pic1 {
-  border-radius: 50%;
-  margin-top: -50;
-  margin-right: 100px;
-  display: block;
-  position: absolute;
-  top: 650px;
-  right: 5px;
-}
-
-.work {
-  width: 100%;
-  height: 900px;
-  background-color: $green;
-  text-align: center;
-  padding-top: 90px;
-}
-
-.work h1 {
-  color: darken($green, 45);
-  font-family: $mont;
-  font-size: 35px;
-  margin-bottom: 50px;
-}
-
-.rigs ul {
-  list-style: none;
-  font-size: 0px;
-  margin-left: -2.0%;
-}
-
-#button2:hover {
-  background-color: darken($green, 45);
-}
-
-.rigs li {
-  display: inline-block;
-  padding: 10px;
-  margin: 0 0 30px 30px;
-  background: #fff;
-  border: 1px solid #ddd;
-  font-family: $mont;
-  font-size: 12px;
-  vertical-align: top;
-  box-shadow: 0 0 5px #ddd;
-  box-sizing: border-box;
-}
-
-.columns-2 li {
-  width: 47.5%;
-}
-
-.rigs li img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 0 10px;
-}
-
-.rig li h3 {
-  margin: 0 0 5px;
-}
-
-.rip li p {
-  font-size: .9em;
-  line-height: 1.5em;
-  color: #999;
-}
-
-#button3:hover {
-  background-color: white;
-  border-radius: 5%;
-}
-
-.connect {
-  width: 100%;
-  height: 500px;
-  background-color: $yell;
-}
-
-.connect h1 {
-  font-family: $mont;
-  color: darken($dy, 45);
-  font-size: 35px;
-  text-align: center;
-  padding-top: 90px;
-}
-
-.connect p {
-  font-family: $mont;
-  color: darken($dy, 45);
-  font-size: 20px;
-  text-align: center;
-  padding-top: 80px;
-}
-
-.connect ul {
-  list-style: none;
-  text-align: center;
-  padding-top: 80px;
-}
-
-.connect li {
-  margin: 10px 15px 20px 15px;
-  display: inline-block;
-}
-
-.connect li a {
-  font-family: $mont;
-  font-size: 30px;
-  color: darken($dy, 45);
-  text-decoration: none;
-}
-
-#footer {
-  width: 100%;
-  height: 90px;
-  background-color: $grey;
-  font-family: $mont;
-  font-size: 11px;
-  color: $ddgrey;
-}
-
-#button4:hover {
-  background: lighten($grey, 45);
-}
-
-#footer ul {
-  list-style: none;
-  text-align: center;
-}
-
-#footer li a {
-  color: $ddgrey;
-  font-size: 11px;
-  padding: 30px 20px 30px 20px;
-  float: left;
-  text-decoration: none;
-}
-
-#footer p {
-  text-align: center;
-  float: right;
-  padding: 30px 20px 30px 20px;
-}
+Backtrace:
+index.css:59
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/engine.rb:519:in `tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/engine.rb:406:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.17/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: The line was indented 2 levels deeper than the previous line.\A         on line 59 of index.css\A \A 54: \A 55: nav a:active {\A 56: }\A 57: \A 58: nav li:hover{\A 59:     background-color: #ec6868;\A 60:     border-bottom: 4px solid #e95252;\A 61:     color: #e95252;\A 62: }\A 63: \A 64: .section-1 {"; }
