@@ -15,8 +15,9 @@ $open: "open sans";
   margin: 0;
 }
 
-body {
+html {
   width: 100%;
+  height: 100%;
 }
 
 li {
@@ -35,6 +36,15 @@ img {
 /** Specific elements **/
 
 /** Header & Navigation **/
+
+.sticky {
+  height: 100px;
+	width: 100%;
+	position: fixed;
+	overflow: hidden;
+  background-color: #e85d75;
+}
+
 header, nav {
   background: #e85d75;
 }
@@ -214,7 +224,7 @@ nav a:visited{
 /** Contact Section **/
 
 .contact-info {
-  background: url("/images/bg.png");
+  background: url("images/bg.png");
   opacity: .90;
   color: darken(#e85d75, 10%);
   padding-bottom: 50px;
