@@ -1,0 +1,341 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+$pink: #ef7f7f;
+$lightblue: #8fdfe6;
+$nblue: #69c0c8;
+$drblue: #4dabb3;
+$lpink: #f59c9c;
+$rob: "roboto";
+$open: "open sans";
+
+/** Mobile first approach! **/
+/** Default styles **/
+* {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+/** Specific elements **/
+
+/** Header & Navigation **/
+header, nav {
+  background-color: #e85d75;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  margin-top: 20px;
+  font-family: $rob;
+  color: lighten(#e85d75, 20%);
+  font-size: 1.5em;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin-top: 15px;
+  padding-bottom: 15px;
+  font-family: $rob;
+  font-size: .875em;
+}
+
+nav ul li a {
+  color: lighten(#e85d75, 20%);
+  cursor: pointer;
+}
+
+nav a:hover{
+  border-bottom: 2px solid darken(#e85d75, 10%);
+  color: darken(#e85d75, 10%);
+}
+
+nav a:visited{
+  color: darken(#e85d75, 14%);
+}
+
+/** About / General Info **/
+
+.general-info {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.general-info, .general-info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+  opacity: .80;
+}
+
+.about-me {
+  padding-top: 20px;
+  font-size: 1.3em;
+}
+
+.hey {
+  font-size: 1.1em;
+}
+
+.role-title {
+  font-size: 1em;
+}
+
+.about-me, .hey, .role-title {
+  color: darken(#e85d75, 5%);
+  font-family: $rob;
+}
+
+.text-info {
+  text-align: center;
+  color: darken(#e85d75, 5%);
+  font-family: $open;
+  font-size: .875em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.me {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10%;
+  max-width: 50%;
+}
+
+.me:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+/** Skills **/
+
+.skills {
+  background-color: lighten(#e85d75, 30%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #e85d75;
+  padding-bottom: 60px;
+}
+
+.skills h1 {
+  padding: 50px 0px 20px 0px;
+  font-family: $rob;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  color: darken(#e85d75, 5%);
+}
+
+.skills p {
+  font-family: $open;
+  font-size: .875em;
+  line-height: 40px;
+}
+
+.list {
+  color: darken(#e85d75, 5%);
+}
+
+/** Project Info **/
+
+.project-info {
+  background-color: #f7f7f7;
+}
+
+.project-info > h1 {
+  text-align: center;
+  padding-top: 50px;
+  color: lighten(#e85d75, 10%);
+  font-family: $rob;
+  font-size: 1.3em;
+}
+
+.project-boxes-1 {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/** Add actual screen shots, links & hover effects & <a> effects **/
+
+.item img {
+  padding-bottom: 10px;
+  max-width: 75%;
+}
+
+.item {
+  text-align: center;
+  padding: 20px;
+}
+
+.item a {
+  color: lighten(#e85d75, 5%);
+}
+
+.item a:hover {
+  color: lighten(#e85d75, 15%);
+}
+
+.item a:visited {
+  color: #e85d75;
+}
+/** Contact Section **/
+
+.contact-info {
+  background: url("images/bg.png");
+  opacity: .90;
+  color: darken(#e85d75, 10%);
+  padding-bottom: 50px;
+}
+
+.contact-info h1 {
+  font-family: $rob;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.field {
+  font-family: $open;
+  font-size: .875em;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.field label {
+  margin-bottom: 10px;
+}
+
+#name, #email {
+  width: 60%;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+#message {
+  border-radius: 5px;
+  width: 60%;
+  height: 120px;
+  border: none;
+}
+
+/** Add hover effects **/
+
+button[type="submit"]{
+  background-color: darken(#40f99b, 20%);
+  font-size: 1.1em;
+  color: #f7f7f7;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: darken(#e85d75, 10%);
+  color: white;
+}
+
+.contact-links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.contact-links ul a {
+  padding: 30px;
+  color: white;
+  font-family: $open;
+  font-size: .875em;
+}
+
+.contact-links ul a:hover {
+  color: darken($pink, 10%);
+}
+
+.contact-links ul a:visited {
+  color: darken($pink, 15%);
+}
+
+footer {
+  background-color: white;
+  color: $pink;
+  font-family: $rob;
+  font-size: .875em;
+  padding-bottom: 10px;
+}
+
+.left-title {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: darken(#40f99b, 15%);
+}
+
+.right-links ul {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+
+.right-links ul a {
+  margin: 15px;
+  color: $pink;
+  cursor: pointer;
+}
+
+.right-links ul a:hover {
+  margin: 15px;
+  color: darken($pink, 10%);
+  border-bottom: 1px solid darken($pink, 10%);
+}
+
+.right-links ul a:visited {
+  margin: 15px;
+  color: darken($pink, 14%);
+}
+
+@media screen and (min-width: 480px) {
+  header {
+    background-color: $pink;
+  }
+}

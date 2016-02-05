@@ -1,143 +1,141 @@
-<html>
+<!DOCTYPE html>
  <head>
-     <link rel= stylesheet href ="index.css" type="text/css">
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <link rel= stylesheet href ="index1.css" type="text/css">
+     <!-- Add javascript/jquery files here-->
  </head>
+
  <body>
+
     <header>
       <h1> Bri Neveu </h1>
     </header>
+
     <nav>
-      <a href="#">About</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
+      <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
-    
+
      <div class="o"></div>
-     
-    <section class="section-1">
-    <h1> - About Me -  </h1>
+
+    <section class="general-info">
+    <h1 class="about-me"> - About Me -  </h1>
     <div class="image">
-        <img class="me" alt="my-face" src="images/Bio-Image.png">
+        <img class="me" alt="This is my face." src="images/me.jpg">
     </div>
-    <h2>Hey, I'm Bri.</h2><br/>
-       
-        <p class="fancy-title"><b>- Junior Front-End Developer -</b></p><br />
-        <p>Location: Western MA, USA</p><br/>
-        <p>Tech is one of the many things I enjoy.<br/></p>
-        <p>Creating websites is a lovely experience I've taken the chance to explore.<br/></p>
-        <p><br/></p><br/>
-        
-    </section>
-    
-    <section class="skills">
-    <h1>- Skills -</h1>
-    <p>These are the topics I've been learning about recently: </p>
-    <p><b>HTML5 | CSS3 | JavaScript</b></p>
-    
-    </section>
-    <div class="clear-o"></div>
-    
-    <div class="section-3">
-    <h1>Projects</h1>
-    
-    <div class="project-boxes-1">
-       <!-- Add images of projects, include link to codepen/github / project title -->
-       <li>
-          <div class="box-1">
-           <h1>Title of Project</h1>
-           
-       </div>
-       </li>
-       <li>
-       <div class="box-1">
-           <h1>Title of Project</h1>
-           
-       </div>
-       </li>
-       <li>
-       <div class="box-1">
-           <h1>Title of Project</h1>
-           
-       </div>
-       </li>
-       <div class="project-boxes-2">
-       <li>
-       <div class="box-1">
-           <h1>Title of Project</h1>
-           
-       </div>
-       </li>
-       <li>
-       <div class="box-1">
-           <h1>Title of Project</h1>
-           
-       </div>
-       </li>
-       <li>
-       <div class="box-1">
-           <h1>Title of Project</h1>
-           
-       </div>
-       </li>
-       </div>
-       
-        
-    </div>
-    </div>
-    
-    <section class="contact-section">
-    <h1>- Contact Me -</h1>
-    <form id="contact" action="http://formspree.io/neveu.bri@gmail.com"  method="POST">
-       
-        <div class="field">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        
-        <div class="field">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        
-        <div class="field">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-        </div>
-        
-        <div class="field">
-            <button type="submit">Send</button>
-        </div>
-  
-    </form>
-    
-    
-    <aside class="contact-info">
-       <h1>- Social Media -</h1>
-        <a href="https://github.com/Pixeluh">GitHub</a>
-        <a href="http://codepen.io/pixeluh/">CodePen</a> 
-        <a href="https://twitter.com/Pixeluh">Twitter</a>
-    </aside> 
-    
+    <h2 class="hey">Hey, I'm Bri.</h2><br/>
+        <h3 class="role-title"><b>- Junior Front-End Developer -</b></h3><br/>
+        <div class="text-info">
+        <p>Location: Western MA, USA<br/><br/>
+        Tech is one of the many things I've been drawn to.<br/>
+        Creating websites is a lovely experience I've taken the chance to explore.<br/></p>
+      </div>
     </section>
 
-    
+    <section class="skills">
+    <h1>- Skills -</h1>
+    <p>These are the topics I've been learning about recently : </p>
+    <p class="list"><b>HTML5 | CSS3 | SASS | FlexBox | JavaScript | Git </b></p>
+    </section>
+
+    <section class="project-info">
+    <h1>- Projects -</h1>
+    <div class="project-boxes-1">
+       <!-- Add images of projects, include link to codepen/github / project title -->
+      <div class="item">
+        <img width="200px" src="images/me.jpg"></img></br>
+        <a href="">Link Goes Here</a><br/>
+      </div>
+
+      <div class="item">
+        <img width="200px" src="images/me.jpg"></img></br>
+        <a href="">Link Goes Here</a><br/>
+      </div>
+
+      <div class="item">
+        <img width="200px" src="images/me.jpg"></img></br>
+        <a href="">Link Goes Here</a><br/>
+      </div>
+
+      <div class="item">
+        <img width="200px" src="images/me.jpg"></img></br>
+        <a href="">Link Goes Here</a><br/>
+      </div>
+
+      <div class="item">
+        <img width="200px" src="images/me.jpg"></img></br>
+        <a href="">Link Goes Here</a><br/>
+      </div>
+
+      <div class="item">
+        <img width="200px" src="images/me.jpg"></img></br>
+        <a href="">Link Goes Here</a><br/>
+      </div>
+    </div>
+  </section>
+    <div class="clear"></div>
+
+  <section class="contact-info">
+    <h1>- Contact Me -</h1>
+      <form id="contact" action="http://formspree.io/neveu.bri@gmail.com"  method="POST">
+
+        <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <div class="field">
+              <button type="submit">Send</button>
+        </div>
+
+      </form>
+
+
+   <div class="contact-links">
+       <h1>- Social Media -</h1>
+         <ul>
+           <li><a href="https://github.com/Pixeluh">GitHub</a></li>
+           <li><a href="http://codepen.io/pixeluh/">CodePen</a></li>
+           <li><a href="https://twitter.com/Pixeluh">Twitter</a></li>
+          <ul>
+   </div>
+
+  </section>
+
+
     <footer>
        <div class="left-title">
-        <p>Copyright 2015</p>
+        <p>Copyright 2016</p>
         </div>
-        
+
         <div class="right-links">
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Project</a>
-            <a href="#">Contact</a>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
-        
+
     </footer>
-    
+
     <div class="clear-2"></div>
-    
+
   </body>
-  
-  
+
+
 </html>

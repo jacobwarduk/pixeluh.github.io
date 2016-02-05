@@ -1,0 +1,274 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+/** Mobile first approach! **/
+/** Default styles **/
+* {
+  margin: 0; }
+
+body {
+  width: 100%; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+img {
+  max-width: 100%; }
+
+/** Specific elements **/
+/** Header & Navigation **/
+header, nav {
+  background-color: #e85d75; }
+
+header {
+  display: flex;
+  justify-content: center; }
+
+header h1 {
+  margin-top: 20px;
+  font-family: "roboto";
+  color: #f5b6c1;
+  font-size: 1.5em; }
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+nav ul li {
+  margin-top: 15px;
+  padding-bottom: 15px;
+  font-family: "roboto";
+  font-size: .875em; }
+
+nav ul li a {
+  color: #f5b6c1;
+  cursor: pointer; }
+
+nav a:hover {
+  border-bottom: 2px solid #e2304f;
+  color: #e2304f; }
+
+nav a:visited {
+  color: #de2040; }
+
+/** About / General Info **/
+.general-info {
+  padding-top: 20px;
+  padding-bottom: 40px; }
+
+.general-info, .general-info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+  opacity: .80; }
+
+.about-me {
+  padding-top: 20px;
+  font-size: 1.3em; }
+
+.hey {
+  font-size: 1.1em; }
+
+.role-title {
+  font-size: 1em; }
+
+.about-me, .hey, .role-title {
+  color: #e54762;
+  font-family: "roboto"; }
+
+.text-info {
+  text-align: center;
+  color: #e54762;
+  font-family: "open sans";
+  font-size: .875em;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.me {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10%;
+  max-width: 50%; }
+
+.me:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80); }
+
+/** Skills **/
+.skills {
+  background-color: #fbe3e7;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #e85d75;
+  padding-bottom: 60px; }
+
+.skills h1 {
+  padding: 50px 0px 20px 0px;
+  font-family: "roboto";
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  color: #e54762; }
+
+.skills p {
+  font-family: "open sans";
+  font-size: .875em;
+  line-height: 40px; }
+
+.list {
+  color: #e54762; }
+
+/** Project Info **/
+.project-info {
+  background-color: #f7f7f7; }
+
+.project-info > h1 {
+  text-align: center;
+  padding-top: 50px;
+  color: #ee8a9b;
+  font-family: "roboto";
+  font-size: 1.3em; }
+
+.project-boxes-1 {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px; }
+
+/** Add actual screen shots, links & hover effects & <a> effects **/
+.item img {
+  padding-bottom: 10px;
+  max-width: 75%; }
+
+.item {
+  text-align: center;
+  padding: 20px; }
+
+.item a {
+  color: #eb7388; }
+
+.item a:hover {
+  color: #f2a0ae; }
+
+.item a:visited {
+  color: #e85d75; }
+
+/** Contact Section **/
+.contact-info {
+  background: url("images/bg.png");
+  opacity: .90;
+  color: #e2304f;
+  padding-bottom: 50px; }
+
+.contact-info h1 {
+  font-family: "roboto";
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center; }
+
+.field {
+  font-family: "open sans";
+  font-size: .875em;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: 20px; }
+
+.field label {
+  margin-bottom: 10px; }
+
+#name, #email {
+  width: 60%;
+  height: 20px;
+  border-radius: 5px;
+  border: none; }
+
+#message {
+  border-radius: 5px;
+  width: 60%;
+  height: 120px;
+  border: none; }
+
+/** Add hover effects **/
+button[type="submit"] {
+  background-color: #06cd68;
+  font-size: 1.1em;
+  color: #f7f7f7;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; }
+
+button[type="submit"]:hover {
+  background-color: #e2304f;
+  color: white; }
+
+.contact-links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+
+.contact-links ul a {
+  padding: 30px;
+  color: white;
+  font-family: "open sans";
+  font-size: .875em; }
+
+.contact-links ul a:hover {
+  color: #e95252; }
+
+.contact-links ul a:visited {
+  color: #e73b3b; }
+
+footer {
+  background-color: white;
+  color: #ef7f7f;
+  font-family: "roboto";
+  font-size: .875em;
+  padding-bottom: 10px; }
+
+.left-title {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: #07e574; }
+
+.right-links ul {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 10px; }
+
+.right-links ul a {
+  margin: 15px;
+  color: #ef7f7f;
+  cursor: pointer; }
+
+.right-links ul a:hover {
+  margin: 15px;
+  color: #e95252;
+  border-bottom: 1px solid #e95252; }
+
+.right-links ul a:visited {
+  margin: 15px;
+  color: #e74040; }
+
+@media screen and (min-width: 480px) {
+  header {
+    background-color: #ef7f7f; } }
+
+/*# sourceMappingURL=index1.css.map */
