@@ -1,5 +1,7 @@
 <!DOCTYPE html>
  <head>
+     <title>Portfolio</title>
+     <link rel="icon" href="images/favicon.ico"/>
      <meta name="viewport" content="width=device-width, initial-scale=1" />
      <link rel= stylesheet href ="index1.css" type="text/css">
      <!-- Add javascript/jquery files here-->
@@ -13,16 +15,16 @@
 
     <nav>
       <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
      <div class="o"></div>
 
-    <section class="general-info">
+    <section id="about" class="general-info">
     <h1 class="about-me"> - About Me -  </h1>
     <div class="image">
         <img class="me" alt="This is my face." src="images/me.JPG">
@@ -36,13 +38,13 @@
       </div>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
     <h1>- Skills -</h1>
     <p>These are the topics I've been learning about recently : </p>
     <p class="list"><b>HTML5 | CSS3 | SASS | FlexBox | JavaScript | Git </b></p>
     </section>
 
-    <section class="project-info">
+    <section id="projects" class="project-info">
     <h1>- Projects -</h1>
     <div class="project-boxes-1">
        <!-- Add images of projects, include link to codepen/github / project title -->
@@ -79,7 +81,7 @@
   </section>
     <div class="clear"></div>
 
-  <section class="contact-info">
+  <section id="contact" class="contact-info">
     <h1>- Contact Me -</h1>
       <form id="contact" action="http://formspree.io/neveu.bri@gmail.com"  method="POST">
 
@@ -106,11 +108,10 @@
 
 
    <div class="contact-links">
-       <h1>- Social Media -</h1>
          <ul>
-           <li><a href="https://github.com/Pixeluh">GitHub</a></li>
-           <li><a href="http://codepen.io/pixeluh/">CodePen</a></li>
-           <li><a href="https://twitter.com/Pixeluh">Twitter</a></li>
+           <li><img src="images/g_logo.PNG"></img><a href="https://github.com/Pixeluh">GitHub</a></li>
+           <li><img src="images/c_logo.PNG"></img><a href="http://codepen.io/pixeluh/">CodePen</a></li>
+           <li><img src="images/t_logo.PNG"></img><a href="https://twitter.com/Pixeluh">Twitter</a></li>
           <ul>
    </div>
 
@@ -124,10 +125,10 @@
 
         <div class="right-links">
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#skills">Contact</a></li>
           </ul>
         </div>
 
