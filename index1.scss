@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
-
 $pink: #ef7f7f;
 $lightblue: #8fdfe6;
 $nblue: #69c0c8;
@@ -8,183 +7,188 @@ $drblue: #4dabb3;
 $lpink: #f59c9c;
 $rob: "roboto";
 $open: "open sans";
-
 /** Mobile first approach! **/
 /** Default styles **/
 * {
   margin: 0;
 }
-
 html {
   width: 100%;
   height: 100%;
 }
-
 li {
   list-style-type: none;
 }
-
 a {
   text-decoration: none;
   cursor: pointer;
 }
-
 img {
   max-width: 100%;
 }
-
 .sticky {
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 99999;
 }
-
 /** Specific elements **/
-
 /** Header & Navigation **/
-header, nav {
+header,
+nav {
   background: #e85d75;
 }
-
 header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-
 header h1 {
   margin-top: 20px;
   font-family: $rob;
   color: lighten(#e85d75, 20%);
   font-size: 1.5em;
 }
-
-nav ul{
+nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
 }
-
 nav ul li {
   margin-top: 15px;
   padding-bottom: 15px;
   font-family: $rob;
-  font-size: .875em;
+  font-size: 0.875em;
 }
-
 nav ul li a {
   color: lighten(#e85d75, 20%);
   cursor: pointer;
 }
-
-nav a:hover{
+nav a:hover {
   border-bottom: 2px solid darken(#e85d75, 10%);
   color: darken(#e85d75, 10%);
 }
-
-nav a:visited{
+nav a:visited {
   color: darken(#e85d75, 14%);
 }
-
 /** About / General Info **/
-
-
-
 .general-info {
   margin-top: 90px;
   padding-top: 20px;
   padding-bottom: 40px;
 }
-
-.general-info, .general-info > div {
+.general-info,
+.general-info > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f7f7f7;
-  opacity: .80;
+  opacity: 0.80;
 }
-
 .about-me {
   padding-top: 20px;
   font-size: 1.3em;
 }
-
 .hey {
   font-size: 1.1em;
 }
-
 .role-title {
   font-size: 1em;
 }
-
-.about-me, .hey, .role-title {
+.about-me,
+.hey,
+.role-title {
   color: darken(#e85d75, 5%);
   font-family: $rob;
 }
-
 .text-info {
   text-align: center;
   color: darken(#e85d75, 5%);
   font-family: $open;
-  font-size: .875em;
+  font-size: 0.875em;
   padding-left: 5px;
   padding-right: 5px;
   line-height: 35px;
 }
-
 .me {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 10%;
   max-width: 50%;
 }
-
 .me:hover {
   opacity: 0.8;
-  filter: alpha(opacity=80);
+  filter:alpha(opacity=80);
 }
-
 /** Skills **/
-
 .skills {
   background-color: lighten(#e85d75, 30%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #e85d75;
   padding-bottom: 60px;
 }
-
 .skills h1 {
-  padding: 50px 0px 20px 0px;
+  padding: 50px 0 20px;
   font-family: $rob;
   font-size: 1.3em;
   margin-bottom: 20px;
   color: darken(#e85d75, 5%);
 }
-
 #teehee {
   font-family: $rob;
-  font-size: .200em;
+  font-size: 0.200em;
 }
-
 .skills p {
   font-family: $open;
-  font-size: .875em;
+  font-size: 0.875em;
   line-height: 40px;
 }
-
 .list {
   color: darken(#e85d75, 5%);
 }
-
 /** Project Info **/
-
 .project-info {
   background-color: #f7f7f7;
 }
-
 .project-info > h1 {
   text-align: center;
   padding-top: 50px;
@@ -192,51 +196,53 @@ nav a:visited{
   font-family: $rob;
   font-size: 1.3em;
 }
-
 .project-boxes-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   padding: 20px;
 }
-
 /** Add actual screen shots, links & hover effects & <a> effects **/
-
 .item img {
   padding-bottom: 10px;
   max-width: 55%;
   border-radius: 5px;
 }
-
 .item {
   text-align: center;
   padding: 20px;
 }
-
 .item a {
   color: lighten(#e85d75, 5%);
   font-family: $rob;
-  font-size: .875em;
+  font-size: 0.875em;
 }
-
 .item a:hover {
   color: lighten(#e85d75, 15%);
   border-bottom: lighten(#e85d75, 15%);
 }
-
 .item a:visited {
   color: #e85d75;
 }
 /** Contact Section **/
-
 .contact-info {
   background: url("Images/bg.png");
-  opacity: .90;
+  opacity: 0.90;
   color: darken(#e85d75, 10%);
   padding-bottom: 50px;
 }
-
 .contact-info h1 {
   font-family: $rob;
   font-size: 1.3em;
@@ -245,38 +251,45 @@ nav a:visited{
   padding-bottom: 30px;
   text-align: center;
 }
-
 .field {
   font-family: $open;
-  font-size: .875em;
+  font-size: 0.875em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  align-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 20px;
 }
-
 .field label {
   margin-bottom: 10px;
 }
-
-#name, #email {
+#name,
+#email {
   width: 60%;
   height: 20px;
   border-radius: 5px;
   border: none;
 }
-
 #message {
   border-radius: 5px;
   width: 60%;
   height: 120px;
   border: none;
 }
-
 /** Add hover effects **/
-
-button[type="submit"]{
+button[type="submit"] {
   background-color: darken(#40f99b, 20%);
   font-size: 1.1em;
   color: #f7f7f7;
@@ -285,189 +298,252 @@ button[type="submit"]{
   border-radius: 5px;
   cursor: pointer;
 }
-
 button[type="submit"]:hover {
   background-color: darken(#e85d75, 10%);
   color: white;
 }
-
 .contact-links {
   margin-left: -40px;
 }
-
 .contact-links ul {
   text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
 .contact-links ul a {
   padding: 30px;
   color: #e85d75;
   font-family: $open;
-  font-size: .875em;
+  font-size: 0.875em;
 }
-
 .contact-links ul a:hover {
   color: darken(#e85d75, 10%);
   border-bottom: darken(#e85d75, 10%);
 }
-
 .contact-links ul a:visited {
   color: darken(#e85d75, 15%);
 }
-
 .contact-links img {
   padding-top: 30px;
   max-width: 30%;
 }
-
 footer {
   background-color: white;
   color: #e85d75;
   font-family: $rob;
-  font-size: .875em;
+  font-size: 0.875em;
   padding-bottom: 10px;
 }
-
 .left-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px;
   color: darken(#40f99b, 15%);
 }
-
 .right-links ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   padding-bottom: 10px;
 }
-
 .right-links ul a {
   margin: 15px;
   color: #e85d75;
   cursor: pointer;
 }
-
 .right-links ul a:hover {
   margin: 15px;
   color: darken(#e85d75, 10%);
   border-bottom: 1px solid darken(#e85d75, 10%);
 }
-
 .right-links ul a:visited {
   margin: 15px;
   color: darken(#e85d75, 14%);
 }
-
 /** Media Queries!! **/
 @media screen and (min-width: 434px) {
   .skills {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   .contact-links img {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding-left: 50px;
     padding-bottom: 20px;
   }
 }
-
 @media screen and (min-width: 500px) {
   .contact-links img {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding-left: 50px;
     padding-bottom: 20px;
   }
 }
-
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
   .contact-links {
     text-align: center;
   }
 }
-
 @media screen and (min-width: 620px) {
   .contact-links img {
     max-width: 40%;
     padding-right: 15px;
   }
 }
-
 @media screen and (min-width: 1000px) {
-
-  .about-me, .hey, .skills h1, .project-info h1, .contact-info h1, {
+  .about-me,
+  .hey,
+  .skills h1,
+  .project-info h1,
+  .contact-info h1,
+   {
     font-size: 2em;
   }
-
-  .general-info p, .contact-info label, .skills p, .contact-links a, .right-links a {
+  .general-info p,
+  .contact-info label,
+  .skills p,
+  .contact-links a,
+  .right-links a {
     font-size: 1.2em;
-    }
-
-  #teehee {
-    font-size: .675em;
   }
-
-
-
+  #teehee {
+    font-size: 0.675em;
+  }
   header {
     position: absolute;
     top: -15px;
     padding-left: 20px;
     font-size: 1.4em;
   }
-
   nav ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
-
   nav li {
     padding-left: 30px;
   }
-
   nav a {
     display: block;
     font-size: 1.2em;
     margin-right: 15px;
   }
-
   #about {
     margin-top: 20px;
     padding-top: 60px;
   }
-
   .project-boxes-1 {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
   }
-
   .right-links a {
     font-size: 1em;
   }
 }
-
 @media screen and (min-width: 1039px) {
   .project-boxes-1 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
     padding: 20px;
   }
-
   .project-boxes-1 img {
     max-width: 100%;
   }
