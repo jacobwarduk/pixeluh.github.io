@@ -33,18 +33,16 @@ img {
   max-width: 100%;
 }
 
+.sticky {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+}
+
 /** Specific elements **/
 
 /** Header & Navigation **/
-
-.sticky {
-  height: 100px;
-	width: 100%;
-	position: fixed;
-	overflow: hidden;
-  background-color: #e85d75;
-}
-
 header, nav {
   background: #e85d75;
 }
@@ -90,7 +88,10 @@ nav a:visited{
 
 /** About / General Info **/
 
+
+
 .general-info {
+  margin-top: 90px;
   padding-top: 20px;
   padding-bottom: 40px;
 }
@@ -128,6 +129,7 @@ nav a:visited{
   font-size: .875em;
   padding-left: 5px;
   padding-right: 5px;
+  line-height: 35px;
 }
 
 .me {
@@ -160,6 +162,11 @@ nav a:visited{
   font-size: 1.3em;
   margin-bottom: 20px;
   color: darken(#e85d75, 5%);
+}
+
+#teehee {
+  font-family: $rob;
+  font-size: .200em;
 }
 
 .skills p {
@@ -224,7 +231,7 @@ nav a:visited{
 /** Contact Section **/
 
 .contact-info {
-  background: url("images/bg.png");
+  background: url("../images/bg.png");
   opacity: .90;
   color: darken(#e85d75, 10%);
   padding-bottom: 50px;
@@ -311,7 +318,7 @@ button[type="submit"]:hover {
 
 .contact-links img {
   padding-top: 30px;
-  max-width: 40%;
+  max-width: 30%;
 }
 
 footer {
@@ -364,6 +371,15 @@ footer {
   }
 }
 
+@media screen and (min-width: 500px) {
+  .contact-links img {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-bottom: 20px;
+  }
+}
+
 @media screen and (min-width: 600px){
   .contact-links {
     text-align: center;
@@ -371,21 +387,27 @@ footer {
 }
 
 @media screen and (min-width: 620px) {
-  .contact-links {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    justify-content: space-around;
-  }
-
   .contact-links img {
-    max-width: 25%;
+    max-width: 40%;
+    padding-right: 15px;
   }
 }
 
 @media screen and (min-width: 1000px) {
+
+  .about-me, .hey, .skills h1, .project-info h1, .contact-info h1, {
+    font-size: 2em;
+  }
+
+  .general-info p, .contact-info label, .skills p, .contact-links a, .right-links a {
+    font-size: 1.2em;
+    }
+
+  #teehee {
+    font-size: .675em;
+  }
+
+
 
   header {
     position: absolute;
@@ -410,6 +432,10 @@ footer {
     margin-right: 15px;
   }
 
+  #about {
+    margin-top: 20px;
+    padding-top: 60px;
+  }
 
   .project-boxes-1 {
     flex-wrap: wrap;
