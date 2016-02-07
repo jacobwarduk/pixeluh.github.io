@@ -44,7 +44,7 @@ header {
 header h1 {
   margin-top: 20px;
   font-family: "roboto";
-  color: #f5b6c1;
+  color: #f8cdd4;
   font-size: 1.5em; }
 
 nav ul {
@@ -68,7 +68,7 @@ nav ul li {
   font-size: 0.875em; }
 
 nav ul li a {
-  color: #f5b6c1;
+  color: #f8cdd4;
   cursor: pointer; }
 
 nav a:hover {
@@ -76,7 +76,7 @@ nav a:hover {
   color: #e2304f; }
 
 nav a:visited {
-  color: #de2040; }
+  color: #da1f3f; }
 
 /** About / General Info **/
 .general-info {
@@ -119,6 +119,7 @@ nav a:visited {
   font-family: "roboto"; }
 
 .text-info {
+  margin: 25px;
   text-align: center;
   color: #e54762;
   font-family: "open sans";
@@ -131,7 +132,10 @@ nav a:visited {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 10%;
-  max-width: 50%; }
+  height: auto;
+  width: auto;
+  max-width: 250px;
+  max-height: 250px; }
 
 .me:hover {
   opacity: 0.8;
@@ -171,6 +175,7 @@ nav a:visited {
   font-size: 0.200em; }
 
 .skills p {
+  text-align: center;
   font-family: "open sans";
   font-size: 0.875em;
   line-height: 40px; }

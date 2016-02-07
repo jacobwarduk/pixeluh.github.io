@@ -51,7 +51,7 @@ header {
 header h1 {
   margin-top: 20px;
   font-family: $rob;
-  color: lighten(#e85d75, 20%);
+  color: lighten(#e85d75, 25%);
   font-size: 1.5em;
 }
 nav ul {
@@ -75,7 +75,7 @@ nav ul li {
   font-size: 0.875em;
 }
 nav ul li a {
-  color: lighten(#e85d75, 20%);
+  color: lighten(#e85d75, 25%);
   cursor: pointer;
 }
 nav a:hover {
@@ -83,7 +83,7 @@ nav a:hover {
   color: darken(#e85d75, 10%);
 }
 nav a:visited {
-  color: darken(#e85d75, 14%);
+  color: darken(#e85d75, 15%);
 }
 /** About / General Info **/
 .general-info {
@@ -126,6 +126,7 @@ nav a:visited {
   font-family: $rob;
 }
 .text-info {
+  margin: 25px;
   text-align: center;
   color: darken(#e85d75, 5%);
   font-family: $open;
@@ -138,7 +139,10 @@ nav a:visited {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 10%;
-  max-width: 50%;
+  height: auto;
+  width: auto;
+  max-width: 250px;
+  max-height: 250px;
 }
 .me:hover {
   opacity: 0.8;
@@ -178,6 +182,7 @@ nav a:visited {
   font-size: 0.200em;
 }
 .skills p {
+  text-align: center;
   font-family: $open;
   font-size: 0.875em;
   line-height: 40px;
