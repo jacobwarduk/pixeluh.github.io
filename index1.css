@@ -14,6 +14,10 @@ p {
   margin: 0 auto 20px;
 }
 
+h1 {
+  margin: 0;
+}
+
 strong {
   font-family: 'Roboto';
   line-weight: 700;
@@ -70,7 +74,7 @@ nav a:visited {
 **/
 
 /** Landing page **/
-.container {
+.landing {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,12 +89,12 @@ nav a:visited {
   background-size: cover;
 }
 
-.container h1 {
+.landing h1 {
   font-size: 4em;
   font-weight: 700;
 }
 
-.container h4 {
+.landing h4 {
   font-size: 1.5em;
   font-weight: 300;
 }
@@ -132,57 +136,27 @@ hr {
   background-color: darken(#06cd68, 15%);
 }
 /** About / General Info **/
+
 .general-info {
-  padding-top: 20px;
-  padding-bottom: 40px; }
+  padding-bottom: 50px;
+}
 
-.general-info,
-.general-info > div {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #f7f7f7;
-  opacity: 0.80; }
-
-.about-me {
+.about-me, .p-about {
+  text-align: center;
   padding-top: 20px;
   font-size: 1.3em; }
 
-.hey {
-  font-size: 1.1em; }
-
-.role-title {
-  font-size: 1em; }
-
-.about-me,
-.hey,
-.role-title {
+.about-me {
   color: #e54762;
   font-family: "roboto"; }
 
 .text-info {
-  margin: 25px;
-  text-align: center;
   color: #e54762;
   font-family: "open sans";
-  font-size: 0.875em;
-  padding-left: 5px;
-  padding-right: 5px;
+  font-size: 1em;
   line-height: 35px; }
 
 .me {
-  margin-top: 20px;
-  margin-bottom: 20px;
   border-radius: 10%;
   height: auto;
   width: auto;
@@ -222,9 +196,9 @@ hr {
   margin-bottom: 20px;
   color: #e54762; }
 
-#teehee {
+/** #teehee {
   font-family: "roboto";
-  font-size: 0.200em; }
+  font-size: 0.200em; } **/
 
 .skills p {
   text-align: center;
@@ -451,7 +425,38 @@ footer {
   color: #de2040; }
 
 /** Media Queries!! **/
+
+@media screen and (min-width: 400px) {
+
+  .resize {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .skills {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+}
+
 @media screen and (min-width: 434px) {
+
+  .resize {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
   .skills {
     display: -webkit-box;
     display: -webkit-flex;
@@ -477,8 +482,11 @@ footer {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    padding-left: 50px;
-    padding-bottom: 20px; } }
+    padding-left: 20px;
+    max-width: 70%;
+    padding-right: -30px;
+    padding-bottom: 20px; }
+}
 @media screen and (min-width: 500px) {
   .contact-links img {
     display: -webkit-box;
@@ -493,12 +501,32 @@ footer {
     padding-left: 50px;
     padding-bottom: 20px; } }
 @media screen and (min-width: 600px) {
+  .contact-links img {
+    max-width: 70%;
+    padding-right: -30px;
+  }
   .contact-links {
     text-align: center; } }
 @media screen and (min-width: 620px) {
   .contact-links img {
-    max-width: 40%;
-    padding-right: 15px; } }
+    max-width: 70%;
+    padding-right: -30px;
+  }
+
+  .resize {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .about-me, .skills h1, .project-info h1 {
+    font-size: 1.5em;
+  }
+
+  .p-about, .skills p {
+    font-size: 1em;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .about-me,
   .hey,
@@ -508,13 +536,14 @@ footer {
     font-size: 2em; }
 
   .general-info p,
+  .p-about,
   .contact-info label,
   .skills p,
   .contact-links a,
   .right-links a {
     font-size: 1.2em; }
 
-  #teehee {
+  /**#teehee {
     font-size: 0.675em; }
 
   header {
@@ -544,7 +573,7 @@ footer {
   nav a {
     display: block;
     font-size: 1.2em;
-    margin-right: 15px; }
+    margin-right: 15px; } **/
 
   #about {
     padding-top: 60px; }
