@@ -6,6 +6,8 @@
      <link rel="stylesheet" href="bootstrap.css"
      type="text/css">
      <link rel="stylesheet" href="index1.css" type="text/css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 
      <!-- Add javascript/jquery files here-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -13,15 +15,14 @@
  </head>
 
  <body>
-   <!--
-   <nav class="sticky">
+   <nav>
      <ul>
          <li><a href="#about">About</a></li>
          <li><a href="#skills">Skills</a></li>
          <li><a href="#projects">Projects</a></li>
          <li><a href="#contact">Contact</a></li>
      </ul>
-   </nav> -->
+   </nav>
     <div class="landing">
       <h1>Bri Neveu</h1>
       <h4>Junior Web Developer</h4>
@@ -30,45 +31,34 @@
     </div>
 
     <section id="about" class="general-info">
-      <!--<h1 class="about-me"> - About Me -  </h1>
-        <div class="image">
-          <img class="me" alt="This is my face." src="Images/me.jpg">
-        </div>
-
-        <div class="text-info">
-        <p>Location: Western MA, USA<br/><br/>
-
-          Web development is a source of enjoyment for me.  Who doesn't love creating code and watching it come to life? Even though there is a lot of trial and error, the reward is always worth it. The best feeling is when you get a problem fixed, after struggling with it for awhile. </p>
-
-        <p>People would describe me as "<strong>hard working</strong>", "<strong>passionate</strong>" &amp; <br/> "<strong>someone you can rely on</strong> to get the job done". <br/><strong>;)</strong>.</p> <br/> <br/>
-        </p>
-      </div> -->
       <div class="container text-info">
-        <h1 class="about-me">About Me</h1>
+        <h1 class="about-me"><i class="fa fa-star-o"></i> About Me <i class="fa fa-star-o"></i></h1>
         <p class="p-about">Location: Western MA, USA<br/><br/>
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="col-md-4">
             <div class="resize">
               <img class="me" alt="This is my face." src="Images/me.jpg">
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-12">
-              <p>Web development is a source of enjoyment for me.  Who doesn't love creating code and watching it come to life? Even though there is a lot of trial and error, the reward is always worth it. The best feeling is when you get a problem fixed, after struggling with it for awhile. </p>
+          <div class="col-md-4">
+            <p>Hi there!</p>
+            <p>Web development is a huge interest to me. In my free time I'm learning about it, in depth. There's always something to learn.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="col-md-4">
             <p>People would describe me as "<strong>hard working</strong>", "<strong>passionate</strong>" &amp; "<strong>someone you can rely on</strong> to get the job done". <strong>;)</strong>.</p>
+            <p>With every task I'm given, I always put my full effort. I strive to do the best I can.</p>
           </div>
       </div>
     </section>
 
     <section id="skills" class="skills">
-    <h1>- Skills -</h1>
-    <p>Are you wondering what skills I know? Well look no further. </p>
-    <p class="list"><strong>HTML5 &#8226; CSS3 &#8226; SASS &#8226; FlexBox * &#8226; JavaScript &#8226; Git &#8226; Bootstrap &#8226; JQuery </strong></p>
+    <h1><i class="fa fa-star-o"></i> Skills <i class="fa fa-star-o"></i></h1>
+    <p class="list"><strong>HTML5 &#8226; CSS3 &#8226; SASS &#8226; FlexBox &#8226; Bootstrap &#8226; JavaScript &#8226; JQuery &#8226; Git </strong></p>
     </section>
 
     <section id="projects" class="project-info">
-    <h1>- Projects -</h1>
+    <h1><i class="fa fa-star"></i> Projects <i class="fa fa-star"></i></h1>
     <div class="project-boxes-1">
        <!-- Add images of projects, include link to codepen/github / project title -->
       <div class="item">
@@ -105,7 +95,7 @@
     <div class="clear"></div>
 
   <section id="contact" class="contact-info">
-    <h1>- Contact Me -</h1>
+    <h1><i class="fa fa-star-o"></i> Contact Me <i class="fa fa-star-o"></i></h1>
       <form id="contact-form" action="http://formspree.io/neveu.bri@gmail.com"  method="POST">
 
         <div class="field">
@@ -132,9 +122,9 @@
 
    <div class="contact-links">
          <ul>
-           <li><img alt="github icon" src="Images/g_logo.png"><a href="https://github.com/Pixeluh">GitHub</a></li>
-           <li><img alt="codepen icon" src="Images/c_logo.png"><a href="../http://codepen.io/pixeluh/">CodePen</a></li>
-           <li><img alt="twitter icon" src="Images/t_logo.png"><a href="https://twitter.com/Pixeluh">Twitter</a></li>
+           <li><!--<img alt="github icon" src="Images/g_logo.png">--><a href="https://github.com/Pixeluh"><i class="fa fa-github-alt"></i> GitHub</a></li>
+           <li><!--<img alt="codepen icon" src="Images/c_logo.png">--><a href="http://codepen.io/pixeluh/"><i class="fa fa-codepen"></i> CodePen</a></li>
+           <li><!--<img alt="twitter icon" src="Images/t_logo.png">--><a href="https://twitter.com/Pixeluh"><i class="fa fa-twitter"></i> Twitter</a></li>
          </ul>
    </div>
 
@@ -145,16 +135,6 @@
        <div class="left-title">
         <p>Copyright 2016</p>
         </div>
-
-        <div class="right-links">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Project</a></li>
-            <li><a href="#skills">Contact</a></li>
-          </ul>
-        </div>
-
     </footer>
 
     <div class="clear-2"></div>
