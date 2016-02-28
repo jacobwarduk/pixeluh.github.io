@@ -238,7 +238,7 @@ hr {
 
 .item img {
   padding-bottom: 10px;
-  max-width: 55%;
+  max-width: 50%;
   border-radius: 5px;
 }
 .item {
@@ -419,6 +419,7 @@ footer {
   }
 }
 @media screen and (min-width: 434px) {
+
   .resize {
     text-align: center;
     padding-bottom: 20px;
