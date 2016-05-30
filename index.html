@@ -1,143 +1,159 @@
 <!DOCTYPE html>
- <head>
-     <title>Portfolio</title>
-     <link rel="icon" href="Images/favicon.ico"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <link rel="stylesheet" href="bootstrap.css"
-     type="text/css">
-     <link rel="stylesheet" href="index1.css" type="text/css">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- // FILES // -->
+    <!-- skeleton UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css" type="text/css">
+    <!-- icon fonts -->
+    <link rel="stylesheet" href="css/icon_font/font/typicons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- user CSS files -->
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <!-- // Wrapper for content -->
+    <div class="wrapper container">
 
+      <!-- // Main Navigation -->
+      <nav id="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav> <!-- // End of Navigation -->
 
-     <!-- Add javascript/jquery files here-->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-      <script src="script.js"></script>
- </head>
+      <!-- // Header Text -->
+      <section class="main-header-text" id="one">
+        <h1>Hey, I'm Bri.</h1>
+      </section> <!-- End of main-header-text //-->
 
- <body>
-   <nav>
-     <ul>
-         <li><a href="#about">About</a></li>
-         <li><a href="#skills">Skills</a></li>
-         <li><a href="#projects">Projects</a></li>
-         <li><a href="#contact">Contact</a></li>
-     </ul>
-   </nav>
-    <div class="landing">
-      <h1>Bri Neveu</h1>
-      <h4>Junior Web Developer</h4>
-      <hr>
-      <button class="more">Learn More</button>
-    </div>
+      <!-- // About -->
+      <section class="about" id="about">
+          <div class="row ui grid container">
+            <h2 class="sixteen wide column">Learn About Me</h2>
+          </div>
 
-    <section id="about" class="general-info">
-      <div class="container text-info">
-        <h1 class="about-me"><i class="fa fa-star-o"></i> About Me <i class="fa fa-star-o"></i></h1>
-        <p class="p-about">Location: Western MA, USA<br/><br/>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="resize">
-              <img class="me" alt="This is my face." src="Images/me.jpg">
+          <div class="row ui grid stackable container">
+            <!-- About me image -->
+            <div class="five wide column">
+              <img class="ui fluid rounded image" src="assets/images/headshot.jpg" alt="picture of me">
             </div>
+
+            <!-- About me text -->
+            <div class="eight wide column">
+              <div class="row">
+                <div class="sixteen wide column left">
+                  <p>
+                    <h3><i class="typcn typcn-code-outline"></i> Skills</h3>
+                    <p>HTML5, CSS3, JavaScript
+                    Flexbox, SASS, Contao(CMS)</p>
+                    </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="sixteen wide column left">
+                  <p>
+                    <h3><i class="typcn typcn-star-outline"></i> Hobbies</h3><p>
+                    Video Games, Animals &amp; Food</p>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- //end of row/grid-->
+      </section> <!-- // End of about -->
+
+      <!-- // Projects -->
+      <section class="projects" id="projects">
+        <div class="row ui grid container">
+          <h2 class="sixteen wide column">Projects</h2>
+        </div>
+
+        <div class="projects-wrapper row ui grid stackable container">
+            <div class="eight wide column">
+              <a href="http://codepen.io/pixeluh/pen/grVrqv">
+                <img id="project-image" src="assets/images/image-one.png" alt="flickr photo viewer" />
+              </a>
+                <h4>Flickr Photo Viewer</h4>
+                <p>Search any tag to recieve images</p>
+                <p>Flickr's API | HTML5 | CSS3 | Jquery</p>
+            </div>
+
+            <div class="eight wide column">
+              <a href="http://codepen.io/pixeluh/pen/EKXNYB">
+                <img id="project-image" src="assets/images/image-two.png" alt="pokemon cards" />
+              </a>
+              <h4>Pokemon Cards</h4>
+              <p>A quick application that allows you to get a new pokemon card! </p>
+              <p>PokeAPI | HTML5 | CSS3 | Jquery</p>
+            </div>
+
+            <div class="eight wide column">
+              <a href="http://codepen.io/pixeluh/pen/wMdpbM">
+                <img id="project-image" src="assets/images/image-three.png" alt="wikipedia viewer" />
+              </a>
+              <h4>Wikipedia Searcher</h4>
+              <p>Type any search terms and get wikipedia articles releveant to what you searched. </p>
+              <p>Wikipedia's API | HTML5 | CSS3 | Jquery</p>
+            </div>
+
+            <div class="eight wide column">
+              <a href="http://codepen.io/pixeluh/pen/jqEgzx">
+                <img id="project-image" src="assets/images/image-four.png" alt="todo list" />
+              </a>
+              <h4>To-Do List</h4>
+              <p>Do you need things to get done? All you have to do is input a new todo, and you can mark it off, or delete it! </p>
+              <p>HTML5 | CSS3 | Jquery</p>
+            </div>
+        </div>
+      </section> <!-- // end of Projects -->
+
+      <!-- // Contact -->
+      <section class="contact" id="contact">
+        <div class="row ui grid container">
+          <h3 class="sixteen wide column">Contact Me</h3>
+        </div>
+
+        <div class="row ui stackable grid container">
+          <form class="ui form eight wide column" action="https://formspree.io/neveu.bri@gmail.com"  method="POST">
+            <div class="field">
+              <label>Your Name</label>
+              <input type="text" name="your-name" placeholder="Your Name">
+              <label>Email</label>
+              <input type="text" name="email" placeholder="Email">
+              <div class="field">
+                <label>Message</label>
+                <textarea></textarea>
+                <button class="ui button" type="submit">Submit</button>
+              </div>
+            </div>
+          </form>
+          <div class="eight wide column icons">
+            <a href="https://github.com/Pixeluh"><i class="typcn typcn-social-github"> <span>Github/Pixeluh</span></i></a>
+            <a href="https://twitter.com/Pixeluh"><i class="typcn typcn-social-twitter"> <span>Twitter@Pixeluh</span></i></a>
+            <a href="https://www.linkedin.com/in/brineveu"><i class="typcn typcn-social-linkedin"> <span>LinkedIn/BriNeveu</span></i></a>
+            <a href="codepen.io/pixeluh/"><i class="fa fa-codepen"> <span><em>CodePen/Pixeluh</em></span></i></a>
           </div>
-          <div class="col-md-4">
-            <p>Hi there!</p>
-            <p>My name is Bri. I'm currently self studying web development on my own. Must I say though, I love it!</p>
-            <p>It's a great feeling watching your code come to life, and I'm happy to pursue this field.</p>
-          </div>
-          <div class="col-md-4">
-            <p>People would describe me as "<strong>hard working</strong>", "<strong>passionate</strong>" &amp; "<strong>someone you can rely on</strong>".</p>
-            <p>With every task I'm given, I always put my full effort. I strive to do the best I can.</p>
-          </div>
-      </div>
-    </section>
-
-    <section id="skills" class="skills">
-    <h1><i class="fa fa-star-o"></i> Skills <i class="fa fa-star-o"></i></h1>
-    <p class="list"><strong>HTML5 &#8226; CSS3 &#8226; Sass &#8226; FlexBox &#8226; Bootstrap &#8226; JavaScript &#8226; JQuery &#8226; Git </strong></p>
-    </section>
-
-    <section id="projects" class="project-info">
-    <h1><i class="fa fa-star"></i> Projects <i class="fa fa-star"></i></h1>
-    <div class="project-boxes-1">
-       <!-- Add images of projects, include link to codepen/github / project title -->
-      <div class="item">
-        <img alt="Wikipedia Viewer" src="Images/wikipedia.png"><br/>
-        <a href="http://codepen.io/pixeluh/full/wMdpbM/">Wikipedia Viewer</a><br/>
-      </div>
-
-      <div class="item">
-        <img alt="Random Quotes" src="Images/random-quote.png"><br/>
-        <a href="http://codepen.io/pixeluh/full/MKMpQj/">Random Quotes</a><br/>
-      </div>
-
-      <div class="item">
-        <img alt="3 Column Layout with Flexbox" src="Images/3-col.png"><br/>
-        <a href="http://codepen.io/pixeluh/full/Rrxdbe/">3 Column Layout with Flexbox</a><br/>
-      </div>
-
-      <div class="item">
-        <img alt="FCC News" src="Images/fcc.png"><br/>
-        <a href="http://codepen.io/pixeluh/full/GoqJrY/">FreeCodeCamp News</a><br/>
-      </div>
-
-      <div class="item">
-        <img alt="RGB Color Guessing Game" src="Images/color.png"><br/>
-        <a href="http://codepen.io/pixeluh/full/YqzMpW/">RGB Color Guessing Game</a><br/>
-      </div>
-
-      <div class="item">
-        <img alt="Todo List" src="Images/todo.png"><br/>
-        <a href="http://codepen.io/pixeluh/full/jqEgzx/">Todo List</a><br/>
-      </div>
-    </div>
-  </section>
-    <div class="clear"></div>
-
-  <section id="contact" class="contact-info">
-    <h1><i class="fa fa-star-o"></i> Contact Me <i class="fa fa-star-o"></i></h1>
-      <form id="contact-form" action="http://formspree.io/neveu.bri@gmail.com"  method="POST">
-
-        <div class="field">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required>
         </div>
+      </section> <!-- // End of the Contact -->
 
-        <div class="field">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
+      <!-- // Footer -->
+      <footer>
+        <div class="row container ui grid">
+          <p>Copyright &copy; 2016</p>
         </div>
+      </footer>
+    </div> <!-- End of Wrapper // -->
 
-        <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
-        </div>
-
-        <div class="field">
-              <button type="submit">Send</button>
-        </div>
-
-      </form>
-
-
-   <div class="contact-links">
-         <ul>
-           <li><!--<img alt="github icon" src="Images/g_logo.png">--><a href="https://github.com/Pixeluh"><i class="fa fa-github-alt"></i> GitHub</a></li>
-           <li><!--<img alt="codepen icon" src="Images/c_logo.png">--><a href="http://codepen.io/pixeluh/"><i class="fa fa-codepen"></i> CodePen</a></li>
-           <li><!--<img alt="twitter icon" src="Images/t_logo.png">--><a href="https://twitter.com/Pixeluh"><i class="fa fa-twitter"></i> Twitter</a></li>
-           <li><a href="https://www.linkedin.com/in/brineveu"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
-         </ul>
-   </div>
-
-  </section>
-
-
-    <footer>
-       <div class="left-title">
-        <p>Copyright 2016</p>
-        </div>
-    </footer>
-
-    <div class="clear-2"></div>
+    <!-- // JAVASCRIPT // -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js" type="text/javascript"></script>
+    <!-- user JS files -->
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/background.js" type="text/javascript"></script>
   </body>
 </html>

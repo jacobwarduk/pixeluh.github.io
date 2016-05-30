@@ -1,0 +1,44 @@
+.contact {
+  color: $yellow;
+  margin-top: 40px;
+  h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .ui.form .field>label {
+    color: $yellow;
+  }
+  .ui.button {
+    margin-top: 10px;
+    background: $yellow;
+    color: $bg;
+    &:hover {
+      background: lighten($yellow, 10%);
+      color: lighten($bg, 10%);
+    }
+  }
+  .icons {
+    margin-top: 30px;
+    i {
+      font-size: 2.5em;
+      span {
+        font-family: $sans;
+        font-size: .50em;
+      }
+    }
+    a {
+      text-align: center;
+      font-size: 1.5em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      color: $yellow;
+      &:hover {
+        color: lighten($yellow, 15%);
+      }
+    }
+  }
+}

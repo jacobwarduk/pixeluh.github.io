@@ -1,0 +1,55 @@
+// -- Global Variables -- //
+
+// fonts
+$sans: 'Source Sans Pro', sans-serif;
+$lato: 'Lato', sans-serif;
+
+// colors
+$white: #fff;
+$bg: #ef476f;
+$green: #06D6A0;
+$yellow: #ffd166;
+
+/* resort these */
+@import "components/main_header_text";
+@import "components/navigation";
+@import "components/about";
+@import "components/projects";
+@import "components/contact";
+@import "components/footer";
+
+
+// imports
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+
+
+
+// BASIC STYLES
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-family: $lato;
+  transition: all 500ms;
+  background: $bg;
+}
+h1, h2, h3 {
+  font-family: $sans;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 1.5em;
+}
+p, a {
+  font-size: 1em;
+}
+
+/* change fonts around to make it pop */

@@ -1,0 +1,18 @@
+.projects {
+  color: $yellow;
+  text-align: center;
+  padding-bottom: 40px;
+  h2 {
+    margin-bottom: 40px;
+  }
+  .projects-wrapper {
+    margin: 0 auto;
+  }
+  img {
+    width: 80%;
+    border-radius: 10px;
+  }
+  p {
+    font-size: .75em;
+  }
+}

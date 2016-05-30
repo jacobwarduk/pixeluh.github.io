@@ -1,0 +1,17 @@
+#one {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 100px 0px; */
+  color: #ffd166;
+  font-size: 3.5em;
+  height: 100vh;
+}
+
+@media (max-width: 401px) {
+  #one {
+    margin-top: 40px;
+    font-size: 2em;
+  }
+}
